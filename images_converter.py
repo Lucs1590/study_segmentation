@@ -34,10 +34,10 @@ def read_img(image: str = None):
         raise Exception('No image provided')
 
 
-files_list = glob.glob('/Users/brito/Documents/Mestrado/Dataset/Odonto/*.HEIC')
+files_list = glob.glob('Dataset/*.HEIC')
 for _file in files_list:
     convert_image(
         _file,
         'tiff',
-        '/Users/brito/Documents/Mestrado/Dataset/Odonto/png/'
+        'Dataset/png/'
     )
