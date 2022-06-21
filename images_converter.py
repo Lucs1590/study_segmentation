@@ -37,4 +37,7 @@ def read_img(image: str = None):
 files_list = glob.glob('/Users/brito/Documents/Mestrado/Dataset/Odonto/*.HEIC')
 for _file in files_list:
     convert_image(
-        _file, 'tiff', '/Users/brito/Documents/Mestrado/Dataset/Odonto/tiff/')
+        _file,
+        'tiff',
+        '/Users/brito/Documents/Mestrado/Dataset/Odonto/png/'
+    )
